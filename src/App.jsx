@@ -1,17 +1,11 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import Timer from "./pages/Index.jsx";
-import AlarmClock from "./pages/AlarmClock.jsx";
-import NavBar from "./components/NavBar.jsx";
+import Index from "./pages/Index.jsx";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <NavBar />
-        <Routes>
-          <Route exact path="/" element={<Timer />} />
-          <Route path="/alarm" element={<AlarmClock />} />
-        </Routes>
+        <Route exact path="/" element={<Index />} />
       </Routes>
     </Router>
   );

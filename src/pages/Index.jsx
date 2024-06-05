@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, VStack, Text, Button, HStack, Input } from "@chakra-ui/react";
 import { FaPlay, FaPause, FaRedo } from "react-icons/fa";
 
-const Timer = () => {
+const Index = () => {
   const [time, setTime] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
   const [inputTime, setInputTime] = useState("");
@@ -63,4 +63,4 @@ const Timer = () => {
   );
 };
 
-export default Timer;
+export default Index;
